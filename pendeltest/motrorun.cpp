@@ -13,7 +13,7 @@ Motrorun::Motrorun(int motorPins[])
 
 void Motrorun::runMotorPWM(float errPos, float posMotor, float setPosMotor){
   //errPos = errPos - 0.1*(setPosMotor-posMotor);
-  pwm = 35 + abs(Kp*errPos);
+  pwm = 48 + abs(Kp*errPos);
   if (pwm > 254){
     pwm = 255;
   }
